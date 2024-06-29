@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.background-container {
+    background-image: url('../task/images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .background-container {
+        background-image: url('../task/images/pattern-background-mobile.svg');
+    }
+}
+@media only screen and (max-width: 1440px) and (min-width: 376px) {
+    .background-container {
+        background-image: url('../task/images/pattern-background-desktop.svg');
+    }
+}
+.orderSummary{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  flex-direction: column;
+  background-color: white;
+  max-width: 450px;
+  border-radius: 15px;
+}
+.description{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+button{
+    height: 50px;
+    max-width: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.pay{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 14px;
+}
+.cancel{
+    background-color: white;
+    border-color: white;
+    color:  hsl(224, 23%, 55%);
+}
+.anualPlan{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.planName {
+    color: hsl(223, 47%, 23%);
+}
+.planCost{
+    color: hsl(224, 23%, 55%);
+}
+.change a{
+    color: hsl(245, 75%, 52%);
+}
